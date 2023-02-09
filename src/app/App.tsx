@@ -1,15 +1,14 @@
-import React, {Suspense, useContext, useState} from 'react';
-import Counter from './components/Counter';
+import React, {Suspense} from 'react';
+import Counter from '../components/Counter';
 import {
-  BrowserRouter,
   Routes,
   Route, Link
 } from 'react-router-dom';
-import AboutAsync from './pages/AboutAsync';
-import HomeAsync from './pages/HomeAsync';
+import {AboutAsync} from 'pages/About';
+import {HomeAsync} from 'pages/Home';
 import "./styles/index.scss";
-import useTheme from './theme/useTheme';
-import {classNames} from './helpers/classNames/classNames';
+import {useTheme} from 'app/providers/ThemeProviders';
+import {classNames} from '../shared/lib/classNames';
 
 const App = () => {
   const {theme, toggleTheme} = useTheme()
