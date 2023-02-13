@@ -1,31 +1,18 @@
-import React, {Suspense} from 'react';
-import Counter from '../components/Counter';
-import {
-  Routes,
-  Route, Link
-} from 'react-router-dom';
-import {AboutAsync} from 'pages/About';
-import {HomeAsync} from 'pages/Home';
+import React from 'react';
 import "./styles/index.scss";
 import {useTheme} from 'app/providers/ThemeProviders';
 import {classNames} from '../shared/lib/classNames';
+import {AppRouter} from 'app/providers/router';
+import {Navbar} from 'widgets/NavBar';
 
 const App = () => {
   const {theme, toggleTheme} = useTheme()
 
   return (
     <div className={classNames("app", {}, [theme])}>
-      <Counter />
+      <Navbar />
       <button onClick={() => toggleTheme()}>toggle button</button>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<HomeAsync />}/>
-          <Route path="about" element={<AboutAsync />}/>
-        </Routes>
-      </Suspense>
-
+      <AppRouter />
     </div>
   )
 }
