@@ -1,15 +1,15 @@
-import {RouteProps} from 'react-router-dom';
-import {HomeAsync} from 'pages/Home';
-import {AboutAsync} from 'pages/About';
+import { type RouteProps } from 'react-router-dom';
+import { HomeAsync } from 'pages/Home';
+import { AboutAsync } from 'pages/About';
 
 export enum AppRoutes {
-  HOME = "home",
-  ABOUT = "about"
+  HOME = 'home',
+  ABOUT = 'about'
 }
 
 export const RoutePaths: Record<AppRoutes, string> = {
-  [AppRoutes.HOME]: "/",
-  [AppRoutes.ABOUT]: "/about",
+  [AppRoutes.HOME]: '/',
+  [AppRoutes.ABOUT]: '/about'
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
