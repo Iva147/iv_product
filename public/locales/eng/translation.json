@@ -1,5 +1,6 @@
 {
-  "About": "",
   "Home": "Home Page",
-  "lang": "ukr"
+  "lang": "ukr",
+  "toggle": "toggle",
+  "loading": "Loading..."
 }
