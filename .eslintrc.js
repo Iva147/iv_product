@@ -53,7 +53,8 @@ module.exports = {
       }
     ],
     '@typescript-eslint/strict-boolean-expressions': [0, { allowString: true, allowNumber: true }],
-    'i18next/no-literal-string': [2, {markupOnly: true, ignoreAttribute: ["to"]}]
+    'i18next/no-literal-string': [2, {markupOnly: true, ignoreAttribute: ["to"]}],
+    'no-trailing-spaces': [1, {ignoreComments: true}]
   },
   globals: {
     '__IS_DEV__': true

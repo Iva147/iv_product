@@ -1,5 +1,5 @@
 import { type FC } from 'react'
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button';
 import { ThemeButton } from 'shared/ui/Button/ui/Button';
 import { useTranslation } from 'react-i18next';

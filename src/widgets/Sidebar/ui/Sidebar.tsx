@@ -1,6 +1,6 @@
 import React, { type FC, useState } from 'react'
 import cls from './Sidebar.module.scss'
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/ui/LangSwitcher';
 import { useTranslation } from 'react-i18next';
