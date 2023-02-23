@@ -2,5 +2,8 @@
   "Home": "Home Page",
   "lang": "ukr",
   "toggle": "toggle",
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "not-found-page": "Page Not Found",
+  "page error": "Something went wrong =(",
+  "reload page": "Reload page"
 }

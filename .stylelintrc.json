@@ -1,9 +1,9 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
-    "ignoreFiles": ["dist/**/*.css"],
     "indentation": [2],
     "selector-class-pattern": null,
-    "declaration-empty-line-before": null
+    "declaration-empty-line-before": null,
+    "no-eol-whitespace": [true, { "ignore": ["empty-lines"]}]
   }
 }

@@ -2,7 +2,7 @@ import { type BuildOptions } from './types/config'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { type RuleSetRule } from 'webpack';
 
-export function buildLoaders (options: BuildOptions): RuleSetRule[] {
+export function buildLoaders(options: BuildOptions): RuleSetRule[] {
   const { isDev } = options
 
   const svgLoader = {
