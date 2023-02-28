@@ -1,6 +1,7 @@
+import type { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const About = () => {
+const About: FC = () => {
   const { t } = useTranslation('about')
 
   return (

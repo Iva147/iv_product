@@ -59,7 +59,8 @@ module.exports = {
       anonymous: 'always',
       named: 'never',
       asyncArrow: 'always'
-    }]
+    }],
+    'react/display-name': 'off'
   },
   globals: {
     '__IS_DEV__': true
