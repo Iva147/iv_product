@@ -5,7 +5,7 @@ import { Link, type LinkProps } from 'react-router-dom';
 
 export enum AppLinkTheme {
   PRIMARY = 'primary',
-  SECONDARY = 'secondary'
+  INVERTED_PRIMARY = 'invertedPrimary'
 }
 interface AppLinkProps extends LinkProps {
   className?: string
@@ -21,7 +21,7 @@ export const AppLink: FC<AppLinkProps> = (props) => {
   } = props
   return (
     <Link
-      className={classNames(cls.navbar, {}, [className, cls[theme]])}
+      className={classNames(cls.AppLink, {}, [className, cls[theme]])}
       to={to}
       {...otherProps}
     >
