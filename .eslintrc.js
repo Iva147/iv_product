@@ -60,7 +60,19 @@ module.exports = {
       named: 'never',
       asyncArrow: 'always'
     }],
-    'react/display-name': 'off'
+    'react/display-name': 'off',
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": ["warn",
+      {
+        'after': true,
+        "overrides": {
+          "if": { "after": false },
+          "for": { "after": false },
+          "while": { "after": false },
+          "from": { "after": true, "before": true }
+        }
+      }
+    ]
   },
   globals: {
     '__IS_DEV__': true
