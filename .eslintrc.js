@@ -21,6 +21,12 @@ module.exports = {
         project: ['./tsconfig.json'],
         ecmaVersion: 2020
       }
+    },
+    {
+      files: ['*.test.{tsx,ts}'],
+      rules: {
+        'i18next/no-literal-string': 'off'
+      }
     }
   ],
   parser: '@typescript-eslint/parser',
@@ -53,7 +59,7 @@ module.exports = {
       }
     ],
     '@typescript-eslint/strict-boolean-expressions': [0, { allowString: true, allowNumber: true }],
-    'i18next/no-literal-string': [2, {markupOnly: true, ignoreAttribute: ["to"]}],
+    'i18next/no-literal-string': [2, {markupOnly: true, ignoreAttribute: ['to', 'data-testid']}],
     'no-trailing-spaces': [1, {ignoreComments: true}],
     '@typescript-eslint/space-before-function-paren': ['error', {
       anonymous: 'always',

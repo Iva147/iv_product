@@ -14,14 +14,19 @@ import AboutIcon from 'shared/assets/icons/about-page.svg'
 interface SidebarProps {
   className?: string
 }
+
 export const Sidebar: FC<SidebarProps> = ({ className = '' }) => {
   const [collapsed, setCollapsed] = useState(false)
   const toggle = () => { setCollapsed(prev => !prev); }
   const { t } = useTranslation()
 
   return (
-    <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
+    <div
+      data-testid="sidebar"
+      className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
+    >
       <Button
+        data-testid="sidebar-toggle"
         onClick={toggle}
         theme={ButtonTheme.BACKGROUND_INVERTED}
         className={cls.collapsedBtn}
