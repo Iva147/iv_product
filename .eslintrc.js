@@ -40,7 +40,8 @@ module.exports = {
   },
   plugins: [
     'react',
-    'i18next'
+    'i18next',
+    'react-hooks'
   ],
   rules: {
     'eol-last': ['error', 'never'],
@@ -78,7 +79,9 @@ module.exports = {
           "from": { "after": true, "before": true }
         }
       }
-    ]
+    ],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error'
   },
   globals: {
     '__IS_DEV__': true
