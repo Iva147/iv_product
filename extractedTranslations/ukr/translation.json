@@ -1,5 +1,6 @@
 {
   "About": "About",
+  "Enter": "Enter",
   "Home": "Home",
   "Lorem": "Lorem",
   "enter": "enter",
@@ -7,6 +8,8 @@
   "loading": "loading",
   "not-found-page": "not-found-page",
   "page error": "page error",
+  "password": "password",
   "reload page": "reload page",
-  "toggle": "toggle"
+  "toggle": "toggle",
+  "username": "username"
 }

@@ -4,6 +4,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button';
 import { Modal } from 'shared/ui/Modal';
 import { useTranslation } from 'react-i18next';
+import { LoginModal } from 'features/AuthByUsername';
 
 interface NavbarProps {
   className?: string
@@ -12,8 +13,12 @@ export const Navbar: FC<NavbarProps> = ({ className = '' }) => {
   const [isAuthModal, setIsAuthModal] = useState(false)
   const { t } = useTranslation()
 
-  const onToggleModal = useCallback(() => {
-    setIsAuthModal(prev => !prev)
+  const onCloseModal = useCallback(() => {
+    setIsAuthModal(false)
+  }, [])
+
+  const onOpenModal = useCallback(() => {
+    setIsAuthModal(true)
   }, [])
 
   return (
@@ -21,13 +26,11 @@ export const Navbar: FC<NavbarProps> = ({ className = '' }) => {
       <Button
         className={cls.links}
         theme={ButtonTheme.CLEAR_INVERTED}
-        onClick={onToggleModal}
+        onClick={onOpenModal}
       >
         {t('enter')}
       </Button>
-      <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-        {t('Lorem')}
-      </Modal>
+      <LoginModal isOpen={isAuthModal} onClose={onCloseModal} lazy />
     </div>
   )
 }

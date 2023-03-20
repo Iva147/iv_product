@@ -60,7 +60,7 @@ module.exports = {
       }
     ],
     '@typescript-eslint/strict-boolean-expressions': [0, { allowString: true, allowNumber: true }],
-    'i18next/no-literal-string': [2, {markupOnly: true, ignoreAttribute: ['to', 'data-testid']}],
+    'i18next/no-literal-string': [2, {markupOnly: true, ignoreAttribute: ['to', 'data-testid', 'name']}],
     'no-trailing-spaces': [1, {ignoreComments: true}],
     '@typescript-eslint/space-before-function-paren': ['error', {
       anonymous: 'always',

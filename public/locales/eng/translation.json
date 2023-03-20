@@ -8,5 +8,8 @@
   "reload page": "Reload page",
   "language": "ukrainian",
   "enter": "Enter",
-  "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  sint ut velit!"
+  "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  sint ut velit!",
+  "username": "Enter your name:",
+  "password": "Enter password:",
+  "Enter": "Enter"
 }

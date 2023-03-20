@@ -8,5 +8,8 @@
   "reload page": "Перезагрузити сторінку",
   "language": "англійська",
   "enter": "Ввійти",
-  "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  sint ut velit!"
+  "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  sint ut velit!",
+  "username": "Введіть ім'я:",
+  "password": "Введіть пароль:",
+  "Enter": "Ввійти"
 }
