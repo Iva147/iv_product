@@ -1,5 +1,4 @@
 import { type FC } from 'react'
-import cls from './LoginModal.module.scss'
 import { Modal } from 'shared/ui/Modal';
 import { LoginForm } from '../LoginForm/LoginForm';
 
