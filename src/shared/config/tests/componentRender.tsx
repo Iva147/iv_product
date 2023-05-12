@@ -6,7 +6,6 @@ import { MemoryRouter } from 'react-router-dom';
 import { StoreProvider } from 'app/providers/StoreProvider';
 import type { DeepPartial } from '@reduxjs/toolkit';
 import type { IStateScheme } from 'app/providers/StoreProvider/config/StateScheme';
-import { Suspense } from 'react';
 
 export interface IComponentRenderOptions {
   route?: string
