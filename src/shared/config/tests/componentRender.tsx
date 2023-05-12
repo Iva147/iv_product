@@ -6,13 +6,14 @@ import { MemoryRouter } from 'react-router-dom';
 import { StoreProvider } from 'app/providers/StoreProvider';
 import type { DeepPartial } from '@reduxjs/toolkit';
 import type { IStateScheme } from 'app/providers/StoreProvider/config/StateScheme';
+import { Suspense } from 'react';
 
-export interface componentRenderOptions {
+export interface IComponentRenderOptions {
   route?: string
   initialState?: DeepPartial<IStateScheme>
 }
 
-export const componentRender = (component: ReactNode, options: componentRenderOptions = {}) => {
+export const componentRender = (component: ReactNode, options: IComponentRenderOptions = {}) => {
   const { route = '/', initialState = {} } = options
 
   return render(

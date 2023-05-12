@@ -15,19 +15,23 @@ const loginSlice = createSlice({
   reducers: {
     setUsername: (state, action: PayloadAction<string>) => {
       state.username = action.payload
+      state.error = ''
     },
     setPassword: (state, action: PayloadAction<string>) => {
       state.password = action.payload
+      state.error = ''
     }
   },
   extraReducers: builder => {
     builder
-      .addCase(loginByUserName.pending, (state, action) => {
+      .addCase(loginByUserName.pending, (state) => {
         state.isLoading = true
+        state.error = ''
       })
       .addCase(loginByUserName.fulfilled, (state, action) => {
         state.isLoading = false
         state.username = action.payload.username
+        state.error = ''
       })
       .addCase(loginByUserName.rejected, (state, action) => {
         state.isLoading = false

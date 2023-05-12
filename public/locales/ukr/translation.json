@@ -11,5 +11,8 @@
   "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  sint ut velit!",
   "username": "Введіть ім'я:",
   "password": "Введіть пароль:",
-  "Enter": "Ввійти"
+  "Enter": "Ввійти",
+  "Authorisation form": "Форма авторизації",
+  "Sign Out": "Вийти",
+  "LoginAndPasswordError": "Ви ввели неправильний логін чи пароль"
 }

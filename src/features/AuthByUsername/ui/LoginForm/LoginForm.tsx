@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginActions } from 'features/AuthByUsername/model/slice/loginSlice';
 import { getLoginState } from 'features/AuthByUsername/model/selectors/getLoginState';
 import { loginByUserName } from 'features/AuthByUsername/services/loginByUserName/loginByUserName';
+import { Text, TextTheme } from 'shared/ui/Text';
 
 interface LoginFormProps {
   className?: string
@@ -32,7 +33,8 @@ export const LoginForm: FC<LoginFormProps> = ({ className = '' }) => {
 
   return (
     <div className={classNames(cls.LoginForm, {}, [className])}>
-      {error && <div>{error}</div>}
+      <Text title={t('Authorisation form')}/>
+      {error && <Text text={error} theme={TextTheme.ERROR}/>}
       <Input
         type="text"
         className={cls.input}

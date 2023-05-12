@@ -1,4 +1,5 @@
 const path = require('path')
+const { DefinePlugin } = require("webpack");
 
 module.exports = {
   "stories": [
@@ -43,6 +44,10 @@ module.exports = {
       test: /\.svg$/,
       use: ['@svgr/webpack']
     })
+
+    config.plugins.push(new DefinePlugin({
+      __IS_DEV__: true
+    }))
 
     return config;
   }

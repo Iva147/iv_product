@@ -1,8 +1,11 @@
 {
   "About": "About",
+  "Authorisation form": "Authorisation form",
   "Enter": "Enter",
   "Home": "Home",
+  "LoginAndPasswordError": "LoginAndPasswordError",
   "Lorem": "Lorem",
+  "Sign Out": "Sign Out",
   "enter": "enter",
   "lang": "lang",
   "loading": "loading",

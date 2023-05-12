@@ -12,7 +12,9 @@ i18n
     interpolation: {
       escapeValue: false
     },
-
+    react: {
+      useSuspense: false
+    },
     resources: { eng: { translationsNS: {} } }
   });
 

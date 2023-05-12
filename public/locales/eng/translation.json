@@ -11,5 +11,8 @@
   "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  sint ut velit!",
   "username": "Enter your name:",
   "password": "Enter password:",
-  "Enter": "Enter"
+  "Enter": "Enter",
+  "Authorisation form": "Authorisation form",
+  "Sign Out": "Sign Out",
+  "LoginAndPasswordError": "Your login or password is not correct"
 }
